@@ -6,7 +6,7 @@ jobs:
   build: 
     name: A workflow for my Hello World file
     #type of machine to run job on, can be github hosted runner or self-hosted
-    runs-on: ububntu-latest
+    runs-on: ubuntu-latest
     #linear sequence of operations of a job
     steps:
       #relative path to action we created in action-a directory
