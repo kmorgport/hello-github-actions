@@ -1,5 +1,3 @@
-name: A workflow for my Hello World file
-on: push
 #base component of workflow run
 jobs:
   #identifier attaching to this job
