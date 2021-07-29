@@ -1,0 +1,17 @@
+name: A workflow for my Hello World file
+on: push
+#base component of workflow run
+jobs:
+  #identifier attaching to this job
+  build: 
+    name: A workflow for my Hello World file
+    #type of machine to run job on, can be github hosted runner or self-hosted
+    runs-on: ubuntu-latest
+    #linear sequence of operations of a job
+    steps:
+      #relative path to action we created in action-a directory
+      - uses: actions/checkout@v1
+      - uses: ./action-a
+        #global variable
+        with:
+          MY_NAME: "Mona"
